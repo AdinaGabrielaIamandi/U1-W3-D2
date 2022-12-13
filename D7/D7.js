@@ -5,7 +5,7 @@
 
 function stringaConcat(str1, str2) {
     const nuovaStringa = str1.slice(0, 2) + str2.slice(-3);
-    return nuovaStringa.toLowerCase();
+    return nuovaStringa.toUpperCase();
 }
 console.log(stringaConcat("EPICODE", "HELLO"));
 
@@ -75,10 +75,33 @@ console.log(nuovo(1));
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
 
+let arrayDiStringhe = ["ADINA", "is", "great"];
+let arrayLung = [];
+
+function lunghezza(arrayLung) {
+    for (let i = 0; i < arrayDiStringhe.length; i++) {
+        arrayLung.push(arrayDiStringhe[i].length);
+    }
+    return arrayLung;
+}
+
+console.log(lunghezza(arrayLung));
+
 /* ESERCIZIO 9
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
 
+let numDispari = [];
+
+function dis(numDispari) {
+    let dispari = 1;
+    while (dispari <= 99) {
+        numDispari.push(dispari);
+        dispari += 2;
+    }
+    return numDispari;
+}
+console.log(dis(numDispari));
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [{
         Title: "The Lord of the Rings: The Fellowship of the Ring",
