@@ -27,6 +27,10 @@ console.log(random(10));
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici (suggerimento: il metodo filter può aiutare)
 */
 
+let arrayDiNumeri = [8, 10, 18, 25, 88, 75, 20];
+const numeriFiltrati = arrayDiNumeri.filter((numero) => numero % 2 === 0);
+console.log(numeriFiltrati);
+
 /* ESERCIZIO 4
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
@@ -34,6 +38,11 @@ console.log(random(10));
 /* ESERCIZIO 5
   Scrivi una funzione per sommare i numeri contenuti in un array (usare REDUCE)
 */
+
+const somma = arrayDiNumeri.reduce((accumulatore, numero) => {
+    return accumulatore + numero;
+}, 0);
+console.log(somma);
 
 /* ESERCIZIO 6
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
