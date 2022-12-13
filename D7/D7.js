@@ -7,7 +7,7 @@ function stringaConcat(str1, str2) {
     const nuovaStringa = str1.slice(0, 2) + str2.slice(-3);
     return nuovaStringa.toUpperCase();
 }
-console.log(stringaConcat("EPICODE", "HELLO"));
+console.log(stringaConcat("epicode", "hello"));
 
 /* ESERCIZIO 2
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
@@ -36,7 +36,7 @@ console.log(numeriFiltrati);
 */
 
 function sommaArray(arrayDiNumeri) {
-    var somma = 0;
+    let somma = 0;
     for (i = 0; i < arrayDiNumeri.length; i++) {
         somma = somma + arrayDiNumeri[i];
     }
@@ -75,7 +75,7 @@ console.log(nuovo(1));
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
 
-let arrayDiStringhe = ["ADINA", "is", "great"];
+let arrayDiStringhe = ["EPICODE", "is", "great"];
 let arrayLung = [];
 
 function lunghezza(arrayLung) {
@@ -206,7 +206,15 @@ const movies = [{
 /* ESERCIZIO 10
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
+function vecchio(arrayAnni) {
+    let arrayAnni = [];
+    for (let i = 0; i < movies.length; i++) {
+        arrayAnni.push(parseInt(movies[i].Year));
+    }
+    return Math.min(arrayAnni);
+}
 
+console.log(vecchio(arrayAnni));
 /* ESERCIZIO 11
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
