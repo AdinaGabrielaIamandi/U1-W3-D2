@@ -58,6 +58,18 @@ console.log(somma);
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
 
+function nuovo(n) {
+    let arrayNuovo = [];
+    let somma6 = 0;
+    for (let i = 0; i < arrayDiNumeri.length; i++) {
+        somma6 = arrayDiNumeri[i] + n;
+        arrayNuovo.push(somma6);
+    }
+    return arrayNuovo;
+}
+
+console.log(nuovo(1));
+
 /* ESERCIZIO 8
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
