@@ -35,6 +35,16 @@ console.log(numeriFiltrati);
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
+function sommaArray(arrayDiNumeri) {
+    var somma = 0;
+    for (i = 0; i < arrayDiNumeri.length; i++) {
+        somma = somma + arrayDiNumeri[i];
+    }
+    return somma;
+}
+
+console.log(sommaArray(arrayDiNumeri));
+
 /* ESERCIZIO 5
   Scrivi una funzione per sommare i numeri contenuti in un array (usare REDUCE)
 */
