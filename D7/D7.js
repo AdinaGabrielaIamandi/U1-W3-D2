@@ -206,15 +206,9 @@ const movies = [{
 /* ESERCIZIO 10
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
-function vecchio(arrayAnni) {
-    let arrayAnni = [];
-    for (let i = 0; i < movies.length; i++) {
-        arrayAnni.push(parseInt(movies[i].Year));
-    }
-    return Math.min(arrayAnni);
-}
 
-console.log(vecchio(arrayAnni));
+const
+
 /* ESERCIZIO 11
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
